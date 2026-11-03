@@ -68,7 +68,7 @@ const monsters = [
   },
   {
     name: "Donald Trump",
-    picture: "walker.png",
+    picture: "Trump.png",
     level: 100,
     health: 100000
   }

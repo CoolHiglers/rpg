@@ -35,12 +35,12 @@ const image = document.querySelector("#img");
 // ==========================================
 
 const weapons = [
-  { name: "Small Knife", power: 5 },
-  { name: "Dagger", power: 30 },
-  { name: "Axe", power: 50 },
-  { name: "Crossbow", power: 100 },
-  { name: "Two Handed Axe", power: 300 },
-  { name: "Sword", power: 400 }
+  { name: "Fist", power: 5 },
+  { name: "Mango", power: 30 },
+  { name: "Handgun", power: 50 },
+  { name: "Automatic Rifle", power: 100 },
+  { name: "Rocket Propelled Grenade", power: 300 },
+  { name: "A-10 Warthog", power: 400 }
 ];
 
 // ==========================================
@@ -49,28 +49,28 @@ const weapons = [
 
 const monsters = [
   {
-    name: "Kennedy",
+    name: "Goy",
     picture: "kennedy.png",
     level: 2,
-    health: 15
-  },
-  {
-    name: "Harold",
-    picture: "harold.png",
-    level: 10,
     health: 100
   },
   {
-    name: "Toth",
-    picture: "toth.png",
-    level: 50,
-    health: 400
+    name: "Greek",
+    picture: "harold.png",
+    level: 10,
+    health: 500
   },
   {
-    name: "Walker",
+    name: "Tommy pearly",
+    picture: "toth.png",
+    level: 50,
+    health: 1550
+  },
+  {
+    name: "Donald Trump",
     picture: "walker.png",
     level: 100,
-    health: 1000
+    health: 5000
   }
 ];
 
@@ -82,7 +82,7 @@ const locations = {
 
   town: {
     buttonText: ["Go to Shop", "Go to Cave", "Go to Castle", "Fight Boss"],
-    buttonFunctions: [goShop, goCave, goCastle, fightWalker],
+    buttonFunctions: [goShop, goCave, goCastle, fightTrump],
     text: "You are in the town square. What would you like to do?",
     picture: "town.png"
   },
@@ -96,14 +96,14 @@ const locations = {
 
   cave: {
     buttonText: ["Fight Kennedy", "Go to Castle", "Go to Shop", "Go to Town"],
-    buttonFunctions: [fightKennedy, goCastle, goShop, goTown],
+    buttonFunctions: [fightGoy, goCastle, goShop, goTown],
     text: "You enter the cave. You see Kennedy!",
     picture: "cave.png"
   },
 
   castle: {
     buttonText: ["Fight Harold", "Fight Toth", "Fight Walker", "Go to Town"],
-    buttonFunctions: [fightHarold, fightToth, fightWalker, goTown],
+    buttonFunctions: [fightGreek, fightTommyPearly, fightTrump, goTown],
     text: "You enter the castle. You see some monsters!",
     picture: "castle.png"
   },
@@ -117,21 +117,21 @@ const locations = {
   defeated: {
     buttonText: ["Go to Town", "Go to Town", "Go to Town", "Go to Town"],
     buttonFunctions: [goTown, goTown, goTown, goTown],
-    text: "The monster has been defeated! You gain XP and gold.",
+    text: "The monster has died. You gain XP and gold.",
     picture: "rip.png"
   },
 
   lose: {
     buttonText: ["Replay", "Replay", "Replay", "Replay"],
     buttonFunctions: [restart, restart, restart, restart],
-    text: "You have been defeated!",
+    text: "YOU DIED",
     picture: "gameOver.png"
   },
 
   win: {
     buttonText: ["Replay", "Replay", "Replay", "Replay"],
     buttonFunctions: [restart, restart, restart, restart],
-    text: "Congratulations! You defeated the final boss! You win!",
+    text: "Congratulations! You defeated Trump! You win!",
     picture: "start.png"
   }
 
@@ -201,7 +201,7 @@ function buyHealth() {
 
   } else {
 
-    text.innerText = "You do not have enough gold!";
+    text.innerText = "You do not have enough gold, it went to Americas greatest ally!";
 
   }
 }
@@ -219,11 +219,11 @@ function buyWeapon() {
 
   } else if (currentWeapon === weapons.length - 1) {
 
-    text.innerText = "You already have the best weapon!";
+    text.innerText = "You already have a CAS you dont need more, mr/ms greedy!";
 
   } else {
 
-    text.innerText = "You do not have enough gold!";
+    text.innerText = "You do not have enough gold, it went to taxes!";
 
   }
 }
@@ -232,19 +232,19 @@ function buyWeapon() {
 // 9. STARTING A FIGHT
 // ==========================================
 
-function fightKennedy() {
+function fightGoy() {
   startFight(0);
 }
 
-function fightHarold() {
+function fightGreek() {
   startFight(1);
 }
 
-function fightToth() {
+function fightTommyPearly() {
   startFight(2);
 }
 
-function fightWalker() {
+function fightTrump() {
   startFight(3);
 }
 

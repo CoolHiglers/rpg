@@ -62,7 +62,7 @@ const monsters = [
   },
   {
     name: "Tommy pearly",
-    picture: "toth.png",
+    picture: "TomBro.png",
     level: 50,
     health: 3000
   },

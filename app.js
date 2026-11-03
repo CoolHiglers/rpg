@@ -4,8 +4,8 @@
 // ==========================================
 
 let xp = 0;
-let health = 100;
-let gold = 50;
+let health = 250;
+let gold = 200;
 let currentWeapon = 0;
 let currentMonster = 0;
 let monsterHealth = 0;
@@ -36,11 +36,11 @@ const image = document.querySelector("#img");
 
 const weapons = [
   { name: "Fist", power: 5 },
-  { name: "Mango", power: 30 },
-  { name: "Handgun", power: 50 },
-  { name: "Automatic Rifle", power: 100 },
-  { name: "Rocket Propelled Grenade", power: 300 },
-  { name: "A-10 Warthog", power: 400 }
+  { name: "Mango", power: 50 },
+  { name: "Handgun", power: 100 },
+  { name: "Automatic Rifle", power: 500 },
+  { name: "Rocket Propelled Grenade", power: 1500 },
+  { name: "A-10 Warthog", power: 2000 }
 ];
 
 // ==========================================
@@ -64,13 +64,13 @@ const monsters = [
     name: "Tommy pearly",
     picture: "toth.png",
     level: 50,
-    health: 1550
+    health: 3000
   },
   {
     name: "Donald Trump",
     picture: "walker.png",
     level: 100,
-    health: 5000
+    health: 100000
   }
 ];
 

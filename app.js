@@ -95,14 +95,14 @@ const locations = {
   },
 
   cave: {
-    buttonText: ["Fight Kennedy", "Go to Castle", "Go to Shop", "Go to Town"],
+    buttonText: ["Fight Goy", "Go to Castle", "Go to Shop", "Go to Town"],
     buttonFunctions: [fightGoy, goCastle, goShop, goTown],
     text: "You enter the cave. You see Kennedy!",
     picture: "cave.png"
   },
 
   castle: {
-    buttonText: ["Fight Harold", "Fight Toth", "Fight Walker", "Go to Town"],
+    buttonText: ["Fight Greek", "Fight TommyPearly", "Fight Trump", "Go to Town"],
     buttonFunctions: [fightGreek, fightTommyPearly, fightTrump, goTown],
     text: "You enter the castle. You see some monsters!",
     picture: "castle.png"
@@ -219,7 +219,7 @@ function buyWeapon() {
 
   } else if (currentWeapon === weapons.length - 1) {
 
-    text.innerText = "You already have a CAS you dont need more, mr/ms greedy!";
+    text.innerText = "You already have a weapon you dont need more, mr/ms greedy!";
 
   } else {
 

@@ -97,14 +97,14 @@ const locations = {
   cave: {
     buttonText: ["Fight Goy", "Go to Castle", "Go to Shop", "Go to Town"],
     buttonFunctions: [fightGoy, goCastle, goShop, goTown],
-    text: "You enter the cave. You see Kennedy!",
+    text: "You enter the cave. You see Goy!",
     picture: "cave.png"
   },
 
   castle: {
     buttonText: ["Fight Greek", "Fight TommyPearly", "Fight Trump", "Go to Town"],
     buttonFunctions: [fightGreek, fightTommyPearly, fightTrump, goTown],
-    text: "You enter the castle. You see some monsters!",
+    text: "You enter the castle. You see a angry guy!",
     picture: "castle.png"
   },
 
